@@ -1,13 +1,7 @@
-import React from "react";
-
-import Recipe from "./Recipe";
+import "./Home.style";
 
 const Home = () => {
-  return (
-    <div>
-      <Recipe />
-    </div>
-  );
+  return <div></div>;
 };
 
 export default Home;

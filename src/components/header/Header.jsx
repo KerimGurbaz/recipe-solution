@@ -1,13 +1,7 @@
-import React from "react";
-import Form from "../header/Form";
+import HeaderStyle from "./Header.style";
 
 const Header = () => {
-  return (
-    <div>
-      <h1>Food App</h1>
-      <Form />
-    </div>
-  );
+  return <div>Header</div>;
 };
 
 export default Header;
