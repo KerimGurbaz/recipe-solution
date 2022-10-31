@@ -33,7 +33,7 @@ export const Menu = styled(Flex)`
     flex-direction: column;
     width: 100%;
     max-height: ${({ isOpen }) => (isOpen ? "400px" : "0")};
-    /* overflow: hidden; */
+    overflow: hidden;
   }
 `;
 
