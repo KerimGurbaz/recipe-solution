@@ -1,17 +1,17 @@
-import { Link } from "react-router-dom";
-import NavbarStyle from "./Navbar.style";
-import Nav, { Logo, Menu, MenuLink, Hamburger } from "./Navbar.style";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { useState } from "react";
+import Nav, { Logo, Menu, MenuLink, Hamburger } from './Navbar.style';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { useState } from 'react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
   return (
     <Nav justify="space-between" wrap="wrap">
-      <Logo>
-        <i>Kerim -- </i>
+      <Logo to="/">
+        <i>{'<Clarusway/>'}</i>
         <span>Recipe</span>
       </Logo>
+
       <Hamburger onClick={() => setIsOpen(!isOpen)}>
         <GiHamburgerMenu />
       </Hamburger>

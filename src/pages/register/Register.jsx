@@ -1,10 +1,10 @@
-import React from "react";
-import underConst from "../../assets/const.png";
+import React from 'react';
+import underConst from '../../assets/const.png';
 
 const Register = () => {
   return (
     <div>
-      <img src={underConst} alt="" style={{ width: "90%", margin: "4rem 0" }} />
+      <img style={{ width: '90%', margin: '4rem 0' }} src={underConst} alt="" />
     </div>
   );
 };

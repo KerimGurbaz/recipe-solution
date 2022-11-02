@@ -1,14 +1,13 @@
-
 import AppRouter from './router/AppRouter';
-import theme from './components/globalStyles/theme'
+import theme from './components/globalStyles/theme';
 import { ThemeProvider } from 'styled-components';
 
-const App = () => {
+function App() {
   return (
     <ThemeProvider theme={theme}>
-    <AppRouter/>
+      <AppRouter />
     </ThemeProvider>
-  )
+  );
 }
 
-export default App
+export default App;
