@@ -6,28 +6,28 @@ import {
   StyledImg,
   StyledInput,
   StyledButton,
-} from './Login.style';
+} from "./Login.style";
 
-import mealSvg from '../../assets/meal.svg';
-import { useNavigate } from 'react-router-dom';
+import mealSvg from "../../assets/meal.svg";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const navigate = useNavigate();
 
   const userInfo = {
-    username: 'ahmet',
+    username: "mike",
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    sessionStorage.setItem('user', JSON.stringify(userInfo));
+    sessionStorage.setItem("user", JSON.stringify(userInfo));
     navigate(-1);
   };
   return (
     <LoginContainer>
       <FormContainer>
         <StyledImg src={mealSvg} />
-        <Header>{'<CW/>'}Recipe</Header>
+        <Header>{"<KG/>"}Recipe</Header>
         <StyledForm onSubmit={handleSubmit}>
           <StyledInput type="text" placeholder="username" required />
           <StyledInput type="password" placeholder="password" required />
